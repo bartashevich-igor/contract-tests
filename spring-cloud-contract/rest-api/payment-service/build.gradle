@@ -50,7 +50,11 @@ test {
 
 publishing {
     publications {
-        mavenJava(MavenPublication) {
+        maven(MavenPublication) {
+            groupId = group
+            artifactId = 'payment-service'
+            version = version
+
             artifact verifierStubsJar
         }
     }
